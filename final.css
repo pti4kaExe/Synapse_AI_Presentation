@@ -58,3 +58,76 @@
   .persona li,.demo-copy li{font-size:15px}
   .stack-grid p{font-size:15px}
 }
+
+/* Native mobile layout: no scaled desktop compositions */
+@media(max-width:650px){
+  html{scroll-padding-top:64px}
+  body{overflow-x:clip}
+  .slide{width:100%;padding:82px 20px 64px}
+  .slide:after{display:none}
+  .kicker{font-size:9px;letter-spacing:1.5px}
+  .section-head{margin-bottom:34px}
+  .section-head h2,.final h2{font-size:clamp(32px,10vw,38px);line-height:1.04;margin:17px 0}
+  .section-head>p,.hero-copy>p{font-size:17px;line-height:1.62}
+
+  .hero{min-height:auto;padding:100px 20px 58px;text-align:center}
+  .hero h1{font-size:clamp(34px,10.4vw,40px);line-height:1.04}
+  .hero-actions{width:100%}
+  .hero-actions .button{width:100%;max-width:340px}
+  .hero-facts{width:100%;gap:8px;justify-content:space-between}
+  .hero-facts span{flex:1;font-size:8px}
+  .hero-device{width:100%;height:680px;margin:32px 0 0;transform:none}
+  .hero-phone{width:min(310px,86vw);height:auto;aspect-ratio:591/1256}
+  .device-halo{width:330px;height:330px}
+  .orbit-one{width:350px;height:350px}.orbit-two{width:285px;height:285px}
+  .floating-stat{min-width:0;width:176px;padding:11px 12px;gap:8px}
+  .floating-stat>span{width:31px;height:31px}
+  .floating-stat b{font-size:18px}.floating-stat small,.floating-stat em{font-size:6px}
+  .float-health{right:-6px;top:120px}.float-steps{left:-6px;bottom:120px}
+
+  .problem-board{height:auto}.metric-card{min-height:0;padding:20px}.metric-card b{font-size:28px}
+  .problem-result{align-items:flex-start;padding:18px}.problem-result h3{font-size:19px}
+
+  .persona,.solution-step,.price-card,.feedback-card,.road-item{padding:23px 20px}
+  .persona-art{height:115px}
+  .solution-step{min-height:0}.step-visual{height:auto;min-height:100px;margin:20px 0}
+  .solution-equation{display:grid;grid-template-columns:1fr;gap:9px;text-align:center}
+  .solution-equation b{transform:rotate(90deg)}
+
+  .demo-layout{min-height:0}
+  .interactive-phone-wrap{width:100%;height:710px;margin:25px 0 0;transform:none}
+  .interactive-phone{width:min(330px,91vw);height:auto;aspect-ratio:591/1256}
+  .demo-glow{width:310px;height:310px}
+  .phone-hotspots{left:12px;right:12px;bottom:14px;height:64px}
+  .phone-hotspots button span{font-size:6px}
+  .demo-secondary{margin-top:25px;padding:7px}
+  .demo-secondary>button{width:100%;padding:12px 7px;font-size:10px}
+  .secondary-preview{gap:20px;padding:16px 8px 8px}
+  .secondary-preview img{width:min(100%,310px);height:auto;aspect-ratio:591/1256;margin:auto;object-fit:cover;object-position:top}
+
+  .architecture-flow article{min-height:145px}
+  .stack-grid article{padding:22px 20px}.stack-grid p{min-height:0}
+  .safety-note{align-items:flex-start}
+
+  .pricing-grid{gap:15px}.price-head b{font-size:38px}
+  .business-loop{flex-direction:column;gap:9px;text-align:center}
+  .business-loop i{transform:rotate(90deg)}
+  .price-action{padding:15px;font-size:14px}
+
+  .fixes{padding:20px 16px}.fix-list article{padding:16px}
+  .roadmap-line{margin-top:8px}
+  .final{min-height:620px;padding-left:20px;padding-right:20px}
+  .final-content{width:100%}.final-content .button{width:100%}
+}
+
+@media(max-width:370px){
+  .slide{padding-left:16px;padding-right:16px}
+  .hero{padding-left:16px;padding-right:16px}
+  .hero h1{font-size:33px}
+  .hero-device{height:630px}
+  .hero-phone{width:280px}
+  .floating-stat{width:160px}
+  .interactive-phone-wrap{height:660px}
+  .interactive-phone{width:300px}
+  .demo-secondary>button{font-size:9px}
+}
