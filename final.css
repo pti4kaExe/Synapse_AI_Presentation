@@ -2,3 +2,33 @@
 @media(max-width:1000px){.site-header{padding:0 20px}.site-header nav{display:none}.site-header nav.open{display:flex;position:fixed;left:0;right:0;top:74px;padding:25px;background:#0d1627;flex-direction:column}.header-button{display:none}.menu-button{display:block}.slide{min-height:auto;padding:100px 22px 80px}.hero{grid-template-columns:1fr;min-height:1450px;text-align:center;padding-top:120px}.hero-copy{display:flex;flex-direction:column;align-items:center}.hero-device{height:720px}.hero-facts{justify-content:center}.slide-next{display:none}.persona-grid,.feedback-grid,.roadmap-grid,.stack-grid{grid-template-columns:1fr 1fr}.solution-flow{grid-template-columns:1fr}.flow-arrow{transform:rotate(90deg);padding:13px}.demo-layout{grid-template-columns:1fr}.demo-copy{max-width:650px;margin:auto}.architecture-flow{grid-template-columns:1fr 1fr;gap:12px}.architecture-flow>em{display:none}.pricing-grid{max-width:800px}.fixes{grid-template-columns:1fr}.problem-board{transform:scale(.9);margin-left:-40px;margin-right:-40px}.float-health{right:1%}.float-steps{left:1%}}
 @media(max-width:650px){.site-header{height:64px}.site-header nav.open{top:64px}.logo{font-size:16px}.slide{padding:82px 17px 65px}.slide:after{right:17px;top:78px}.section-head{margin-bottom:38px}.section-head h2,.final h2{font-size:39px;letter-spacing:-2.5px}.section-head>p{font-size:13px}.hero{display:block;min-height:1120px;padding:100px 17px 60px}.hero h1{font-size:40px;letter-spacing:-2.4px}.hero-copy>p{font-size:14px}.hero-actions{flex-direction:column;gap:17px}.hero-facts{gap:16px}.hero-device{height:540px;margin-top:15px;transform:scale(.76);margin-left:-55px;margin-right:-55px}.hero-phone{width:330px;height:696px}.floating-stat{transform:scale(.9)}.float-health{right:-45px}.float-steps{left:-45px}.problem-board{height:820px;transform:none;margin:0}.signal-lines{display:none}.metric-card{position:relative!important;width:100%;left:auto!important;right:auto!important;top:auto!important;bottom:auto!important;margin-bottom:12px;animation:none}.synapse-core{display:none}.problem-result{margin-top:20px}.persona-grid,.feedback-grid,.roadmap-grid,.stack-grid,.pricing-grid,.fix-list{grid-template-columns:1fr}.persona>p{min-height:auto}.solution-equation{flex-wrap:wrap}.demo{padding-left:17px;padding-right:17px}.demo-copy h3{font-size:31px}.interactive-phone-wrap{height:590px;transform:scale(.8);margin:-25px -50px}.phone-badge{display:none}.demo-secondary>button{padding:11px 9px;font-size:8px}.secondary-preview{grid-template-columns:1fr;padding:15px}.secondary-preview img{width:100%;height:440px}.secondary-preview h3{font-size:24px}.architecture-flow{grid-template-columns:1fr}.business-loop{flex-wrap:wrap}.business-loop i{transform:rotate(90deg)}.price-card{padding:27px 20px}.fixes{padding:20px}.road-item p{min-height:auto}.final{min-height:620px}.final-content>div:last-child{flex-direction:column;align-items:center}footer{flex-direction:column;text-align:center}footer small{margin:0}.reveal{transform:translateY(12px)}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.hero-phone,.floating-stat,.metric-card,.interactive-phone,.phone-badge{animation:none}}
+
+/* Readability pass: calmer headings, larger presentation copy */
+.section-head h2,.final h2{font-size:clamp(40px,4.6vw,62px);line-height:1.02;letter-spacing:-3.2px}
+.hero h1{font-size:clamp(47px,4.25vw,64px);line-height:1.035;letter-spacing:-3.5px}
+.section-head>p{font-size:18px;line-height:1.72}
+.hero-copy>p{font-size:19px;line-height:1.72}
+.persona>p,.solution-step>p,.demo-copy>p,.secondary-preview p,.price-card>p,.feedback-card>p,.fixes-title p,.road-item p{font-size:14px;line-height:1.72}
+.persona li,.demo-copy li{font-size:13px}
+.problem-result p{font-size:14px;line-height:1.6}
+.problem-result h3{font-size:22px}
+.metric-card>span{font-size:11px}
+.solution-equation span,.business-loop span{font-size:12px}
+.stack-grid p{font-size:13px;line-height:1.68}
+.stack-grid article>span,.architecture-flow article>span,.price-head>span{font-size:10px}
+.architecture-flow article>small{font-size:10px;line-height:1.5}
+.price-card li b{font-size:13px}
+.price-card li small{font-size:11px;line-height:1.55}
+.feedback-top>span{font-size:12px;line-height:1.45}
+.fix-list b{font-size:13px}
+.fix-list p{font-size:11px;line-height:1.6}
+.road-item small{font-size:8px}
+.safety-note p{font-size:12px}
+.click-hint b{font-size:12px}.click-hint small{font-size:10px}
+
+@media(max-width:650px){
+  .section-head h2,.final h2{font-size:35px;letter-spacing:-2px}
+  .hero h1{font-size:36px;letter-spacing:-1.9px}
+  .section-head>p,.hero-copy>p{font-size:15px}
+  .persona>p,.solution-step>p,.demo-copy>p,.secondary-preview p,.price-card>p,.feedback-card>p,.fixes-title p,.road-item p{font-size:13px}
+}
