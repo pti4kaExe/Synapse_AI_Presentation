@@ -32,3 +32,29 @@
   .section-head>p,.hero-copy>p{font-size:15px}
   .persona>p,.solution-step>p,.demo-copy>p,.secondary-preview p,.price-card>p,.feedback-card>p,.fixes-title p,.road-item p{font-size:13px}
 }
+
+/* Large editorial body copy, aligned with the reference site */
+.section-head>p,.hero-copy>p{font-size:20px;line-height:1.68}
+.persona>p,.solution-step>p,.demo-copy>p,.secondary-preview p,.price-card>p,.feedback-card>p,.fixes-title p,.road-item p{font-size:17px;line-height:1.68}
+.persona li,.demo-copy li{font-size:16px;line-height:1.55}
+.problem-result p{font-size:17px;line-height:1.58}
+.metric-card>span{font-size:14px;line-height:1.45}
+.solution-equation span,.business-loop span{font-size:14px}
+.stack-grid p{font-size:16px;line-height:1.62}
+.architecture-flow article>small{font-size:12px;line-height:1.5}
+.price-card li b{font-size:16px}
+.price-card li small{font-size:14px;line-height:1.55}
+.feedback-top>span{font-size:14px}
+.fix-list b{font-size:15px}
+.fix-list p{font-size:14px;line-height:1.55}
+.road-item small{font-size:10px}
+.safety-note p{font-size:15px;line-height:1.55}
+.click-hint b{font-size:14px}.click-hint small{font-size:12px}
+.price-action{font-size:13px}
+
+@media(max-width:650px){
+  .section-head>p,.hero-copy>p{font-size:17px}
+  .persona>p,.solution-step>p,.demo-copy>p,.secondary-preview p,.price-card>p,.feedback-card>p,.fixes-title p,.road-item p{font-size:16px}
+  .persona li,.demo-copy li{font-size:15px}
+  .stack-grid p{font-size:15px}
+}
