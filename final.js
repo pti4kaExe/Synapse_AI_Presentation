@@ -1,8 +1,8 @@
 const appScreens={
-  health:{image:'assets/screens/home.jpg',index:'01 / 04',title:'Здоровье в одном экране',text:'Шаги, расход энергии и Health Score помогают быстро понять текущее состояние.',list:['Общая картина дня','Результат последнего анализа','Ключевые показатели здоровья'],badge:'Health Score: 70/100'},
-  training:{image:'assets/screens/training.jpg',index:'02 / 04',title:'Тренировки под личную цель',text:'Готовый план на сегодня, сложность, расход калорий и возможность создать свою тренировку.',list:['AI-план с упражнениями','Свои тренировки','Прогресс выполнения'],badge:'План: базовая силовая'},
-  ai:{image:'assets/screens/analysis.jpg',index:'03 / 04',title:'AI объясняет ваши данные',text:'Ассистент рассчитывает Health Score, показывает полноту данных и отвечает на любые вопросы.',list:['Персональный анализ','План под выбранную цель','Свободный AI-чат'],badge:'Анализ готов: 70/100'},
-  nutrition:{image:'assets/screens/nutrition.jpg',index:'04 / 04',title:'Питание без сложных расчетов',text:'Synapse рассчитывает калории, БЖУ и воду, а пользователь может вести собственный дневник.',list:['Персональная цель КБЖУ','AI-рацион на день','Свои приемы пищи'],badge:'Цель: 2 956 ккал'}
+  health:{images:[['assets/screens/home.jpg','Главный экран Synapse AI'],['assets/screens/health-details.jpg','Показатели здоровья Synapse AI']],index:'01 / 04',title:'Здоровье в одном экране',text:'Шаги, расход энергии и Health Score помогают быстро понять текущее состояние.',list:['Общая картина дня','Результат последнего анализа','Ключевые показатели здоровья'],badge:'Health Score: 70/100'},
+  training:{images:[['assets/screens/training.jpg','План тренировок Synapse AI']],index:'02 / 04',title:'Тренировки под личную цель',text:'Готовый план на сегодня, сложность, расход калорий и возможность создать свою тренировку.',list:['AI-план с упражнениями','Свои тренировки','Прогресс выполнения'],badge:'План: базовая силовая'},
+  ai:{images:[['assets/screens/analysis.jpg','AI-анализ Synapse'],['assets/screens/ai-plan.jpg','Персональный AI-план'],['assets/screens/chat.jpg','Свободный диалог с Synapse AI']],index:'03 / 04',title:'AI объясняет ваши данные',text:'Ассистент рассчитывает Health Score, показывает полноту данных и отвечает на любые вопросы.',list:['Персональный анализ','План под выбранную цель','Свободный AI-чат'],badge:'Анализ готов: 70/100'},
+  nutrition:{images:[['assets/screens/nutrition-profile.jpg','Расчет питания по профилю'],['assets/screens/nutrition.jpg','AI-рацион Synapse'],['assets/screens/nutrition-meals.jpg','Меню на оставшийся день']],index:'04 / 04',title:'Питание без сложных расчетов',text:'Synapse рассчитывает калории, БЖУ и воду, а пользователь может вести собственный дневник.',list:['Персональная цель КБЖУ','AI-рацион на день','Свои приемы пищи'],badge:'Цель: 2 956 ккал'}
 };
 
 const aiViews={
@@ -13,9 +13,15 @@ const aiViews={
 
 function switchAppScreen(key){
   const data=appScreens[key];
-  const image=document.querySelector('#demo-image');
-  image.classList.add('switching');
-  setTimeout(()=>{image.src=data.image;image.alt=data.title;image.classList.remove('switching')},170);
+  const screen=document.querySelector('#demo-screen');
+  const track=document.querySelector('#demo-track');
+  screen.classList.add('switching');
+  setTimeout(()=>{
+    track.innerHTML=data.images.map(([src,alt])=>`<img src="${src}" alt="${alt}">`).join('');
+    screen.scrollTop=0;
+    screen.classList.remove('switching');
+    screen.classList.toggle('single-screen',data.images.length===1);
+  },170);
   document.querySelector('#demo-index').textContent=data.index;
   document.querySelector('#demo-title').textContent=data.title;
   document.querySelector('#demo-text').textContent=data.text;

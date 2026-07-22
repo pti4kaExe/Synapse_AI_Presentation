@@ -83,7 +83,13 @@
         <div class="interactive-phone-wrap">
           <div class="demo-glow"></div>
           <div class="phone interactive-phone">
-            <div class="screen-frame"><img id="demo-image" src="assets/screens/home.jpg" alt="Главный экран Synapse AI"></div>
+            <div class="screen-frame" id="demo-screen" aria-label="Прокручиваемые экраны приложения">
+              <div class="screen-track" id="demo-track">
+                <img src="assets/screens/home.jpg" alt="Главный экран Synapse AI">
+                <img src="assets/screens/health-details.jpg" alt="Показатели здоровья Synapse AI">
+              </div>
+            </div>
+            <div class="phone-scroll-hint" aria-hidden="true"><span>↕</span> Листайте экран</div>
             <div class="phone-hotspots" role="tablist" aria-label="Разделы приложения">
               <button class="active" data-app-screen="health" aria-label="Здоровье"><i>♡</i><span>Здоровье</span></button>
               <button data-app-screen="training" aria-label="Тренировки"><i>⚒</i><span>Тренировки</span></button>

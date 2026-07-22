@@ -131,3 +131,18 @@
   .interactive-phone{width:300px}
   .demo-secondary>button{font-size:9px}
 }
+
+/* Scrollable real-app gallery inside the phone */
+.screen-frame{overflow-y:auto;overflow-x:hidden;scroll-snap-type:y mandatory;overscroll-behavior:contain;scrollbar-width:none;touch-action:pan-y;transition:opacity .2s,transform .25s}
+.screen-frame::-webkit-scrollbar{display:none}
+.screen-frame.switching{opacity:.25;transform:scale(.985)}
+.screen-track{width:100%;height:100%;display:flex;flex-direction:column}
+.screen-track img{display:block;flex:0 0 100%;width:100%;height:100%;object-fit:cover;object-position:top;scroll-snap-align:start;scroll-snap-stop:always}
+.phone-scroll-hint{position:absolute;z-index:4;top:16px;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:6px;padding:7px 10px;border:1px solid rgba(114,157,226,.3);border-radius:20px;background:rgba(8,17,32,.78);backdrop-filter:blur(10px);color:#dce8fa;font-size:8px;font-weight:700;letter-spacing:.5px;pointer-events:none;white-space:nowrap;animation:scroll-hint 2.2s ease-in-out infinite}
+.phone-scroll-hint span{color:#65abff;font-size:12px}
+.screen-frame.single-screen + .phone-scroll-hint{display:none}
+@keyframes scroll-hint{0%,100%{transform:translate(-50%,0);opacity:.72}50%{transform:translate(-50%,7px);opacity:1}}
+
+@media(max-width:650px){
+  .phone-scroll-hint{top:13px;font-size:8px}
+}
