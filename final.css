@@ -146,3 +146,10 @@
 @media(max-width:650px){
   .phone-scroll-hint{top:13px;font-size:8px}
 }
+
+/* Screenshots already contain the real app navigation. Keep only invisible click targets. */
+.phone-hotspots{left:0;right:0;bottom:0;height:92px;padding:0 12px;border:0;border-radius:0;background:transparent;backdrop-filter:none;box-shadow:none}
+.phone-hotspots button{opacity:0}
+@media(max-width:650px){
+  .phone-hotspots{left:0;right:0;bottom:0;height:88px;padding:0 10px}
+}
