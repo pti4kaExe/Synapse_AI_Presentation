@@ -221,3 +221,6 @@
   .architecture:before,.orbit-ring,.architecture-orbit-art:before,.orbit-node,.business:after{animation:none}
   .interactive-card,.price-card{transition:none}
 }
+
+footer p{font-size:15px;font-weight:650;color:#9dacc4;letter-spacing:.1px}
+@media(max-width:650px){footer p{font-size:14px;line-height:1.5}}
