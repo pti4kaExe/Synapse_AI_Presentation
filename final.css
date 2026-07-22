@@ -182,7 +182,8 @@
 .price-card{backdrop-filter:blur(14px);background:linear-gradient(145deg,rgba(18,28,48,.92),rgba(10,17,31,.92));transition:transform .36s cubic-bezier(.2,.8,.2,1),border-color .36s,box-shadow .36s}
 .price-card.premium{background:radial-gradient(circle at 85% 5%,rgba(50,118,232,.3),transparent 35%),linear-gradient(145deg,rgba(20,35,61,.94),rgba(11,19,34,.94))}
 
-.interactive-card{--mx:50%;--my:50%;position:relative;isolation:isolate;transition:transform .34s cubic-bezier(.2,.8,.2,1),border-color .34s,box-shadow .34s,background-color .34s}
+.interactive-card{--mx:50%;--my:50%;isolation:isolate;transition:transform .34s cubic-bezier(.2,.8,.2,1),border-color .34s,box-shadow .34s,background-color .34s}
+.interactive-card:not(.metric-card){position:relative}
 .interactive-card:after{content:'';position:absolute;z-index:4;inset:0;border-radius:inherit;pointer-events:none;opacity:0;background:radial-gradient(260px circle at var(--mx) var(--my),rgba(92,164,255,.13),transparent 63%);mix-blend-mode:screen;transition:opacity .3s}
 .architecture-flow article,.stack-grid article{overflow:hidden}
 .architecture-flow article:before,.stack-grid article:before,.price-card:before{content:'';position:absolute;z-index:2;top:-30%;left:-70%;width:34%;height:160%;pointer-events:none;background:linear-gradient(90deg,transparent,rgba(188,226,255,.13),transparent);transform:rotate(16deg);transition:left .7s ease}
