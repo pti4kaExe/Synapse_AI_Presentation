@@ -51,6 +51,16 @@ const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{
 }),{threshold:.1});
 document.querySelectorAll('.reveal').forEach(element=>observer.observe(element));
 
+const interactiveCards=document.querySelectorAll('.metric-card,.persona,.solution-step,.architecture-flow article,.stack-grid article,.price-card,.feedback-card,.fix-list article,.road-item,.problem-result,.click-hint,.safety-note');
+interactiveCards.forEach(card=>{
+  card.classList.add('interactive-card');
+  card.addEventListener('pointermove',event=>{
+    const rect=card.getBoundingClientRect();
+    card.style.setProperty('--mx',`${event.clientX-rect.left}px`);
+    card.style.setProperty('--my',`${event.clientY-rect.top}px`);
+  });
+});
+
 const menu=document.querySelector('.menu-button');
 const nav=document.querySelector('#main-nav');
 menu.addEventListener('click',()=>{
