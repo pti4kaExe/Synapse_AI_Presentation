@@ -1,14 +1,14 @@
 const appScreens={
-  health:{images:[['assets/screens/home.jpg','Главный экран Synapse AI'],['assets/screens/health-details.jpg','Показатели здоровья Synapse AI']],index:'01 / 05',title:'Здоровье в одном экране',text:'Шаги, расход энергии и Health Score помогают быстро понять текущее состояние.',list:['Общая картина дня','Результат последнего анализа','Ключевые показатели здоровья'],badge:'Health Score: 70/100'},
-  training:{images:[['assets/screens/training.jpg','План тренировок Synapse AI']],index:'02 / 05',title:'Тренировки под личную цель',text:'Готовый план на сегодня, сложность, расход калорий и возможность создать свою тренировку.',list:['AI-план с упражнениями','Свои тренировки','Прогресс выполнения'],badge:'План: базовая силовая'},
-  ai:{images:[['assets/screens/analysis.jpg','AI-анализ Synapse'],['assets/screens/ai-plan.jpg','Персональный AI-план'],['assets/screens/chat.jpg','Свободный диалог с Synapse AI']],index:'03 / 05',title:'AI объясняет ваши данные',text:'Ассистент рассчитывает Health Score, показывает полноту данных и отвечает на любые вопросы.',list:['Персональный анализ','План под выбранную цель','Свободный AI-чат'],badge:'Анализ готов: 70/100'},
-  nutrition:{images:[['assets/screens/nutrition.jpg','AI-рацион Synapse'],['assets/screens/nutrition-diary.jpg','Дневник питания Synapse'],['assets/screens/nutrition-meals.jpg','Меню на оставшийся день']],index:'04 / 05',title:'Питание без сложных расчетов',text:'Synapse рассчитывает калории, БЖУ и воду, а пользователь может вести собственный дневник.',list:['Персональная цель КБЖУ','AI-рацион на день','Свои приемы пищи'],badge:'Цель: 2 956 ккал'},
-  profile:{images:[['assets/screens/profile.jpg','Профиль пользователя Synapse'],['assets/screens/profile-settings.jpg','Настройки профиля Synapse']],index:'05 / 05',title:'Профиль под ваши цели',text:'Личные параметры, цель и настройки собраны в одном месте и используются для персонализации рекомендаций.',list:['Антропометрия и личная цель','Редактирование профиля','Настройки и конфиденциальность'],badge:'Цель: набор мышечной массы'}
+  health:{images:[['assets/screens/home.jpg','Главный экран Synapse AI'],['assets/screens/health-details.jpg','Показатели здоровья Synapse AI']],index:'01 / 05',title:'Здоровье в одном экране',text:'Шаги, активные калории, сон и Health Score помогают быстро понять текущее состояние.',list:['Общая картина дня','Результат последнего анализа','Ключевые показатели здоровья'],badge:'Health Score: 65/100'},
+  training:{images:[['assets/screens/training.jpg','План тренировок Synapse AI'],['assets/screens/training-details.jpg','Прогресс тренировок Synapse AI']],index:'02 / 05',title:'Тренировки под личную цель',text:'Две тренировки на сегодня, сложность, расход калорий и возможность добавить свой план.',list:['AI-план для похудения','Свои тренировки','Прогресс выполнения'],badge:'План: 2 тренировки'},
+  ai:{images:[['assets/screens/analysis.jpg','Результат AI-анализа Synapse'],['assets/screens/analysis-details-1.jpg','Показатели AI-анализа Synapse'],['assets/screens/analysis-details-2.jpg','Рекомендация AI-анализа Synapse'],['assets/screens/ai-plan.jpg','Начало персонального AI-плана'],['assets/screens/ai-plan-details.jpg','Рекомендации персонального AI-плана'],['assets/screens/ai-plan-week.jpg','Недельный AI-план тренировок'],['assets/screens/ai-plan-finish.jpg','Завершение персонального AI-плана'],['assets/screens/chat.jpg','Свободный диалог с Synapse AI']],index:'03 / 05',title:'AI объясняет ваши данные',text:'Ассистент анализирует показатели, формирует недельный план и отвечает на свободные вопросы.',list:['Персональный анализ 65/100','План под выбранную цель','Свободный AI-чат'],badge:'Анализ готов: 65/100'},
+  nutrition:{images:[['assets/screens/nutrition.jpg','AI-рацион Synapse'],['assets/screens/nutrition-diary.jpg','Дневник питания Synapse'],['assets/screens/nutrition-meals.jpg','Меню на оставшийся день']],index:'04 / 05',title:'Питание без сложных расчетов',text:'Synapse рассчитывает калории, БЖУ и воду, а пользователь может вести собственный дневник.',list:['Персональная цель КБЖУ','AI-рацион на день','Свои приемы пищи'],badge:'Цель: 2 000 ккал'},
+  profile:{images:[['assets/screens/profile.jpg','Профиль пользователя Synapse'],['assets/screens/profile-settings.jpg','Настройки профиля Synapse']],index:'05 / 05',title:'Профиль под ваши цели',text:'Личные параметры, цель и настройки собраны в одном месте и используются для персонализации рекомендаций.',list:['Антропометрия и личная цель','Редактирование профиля','Настройки и конфиденциальность'],badge:'Цель: похудеть'}
 };
 
 const aiViews={
-  analysis:{image:'assets/screens/analysis.jpg',title:'AI объясняет результат',copy:'Пользователь получает Health Score, период анализа, BMI и информацию о полноте данных.'},
-  plan:{image:'assets/screens/ai-plan.jpg',title:'AI формирует персональный план',copy:'Рекомендации меняются под цель: снижение веса, набор массы или поддержание формы.'},
+  analysis:{image:'assets/screens/analysis.jpg',title:'AI объясняет результат',copy:'Пользователь получает Health Score 65/100, период анализа, BMI и информацию о полноте данных.'},
+  plan:{image:'assets/screens/ai-plan.jpg',title:'AI формирует персональный план',copy:'Для цели похудения Synapse создает рекомендации и недельный план из двух тренировок.'},
   chat:{image:'assets/screens/chat.jpg',title:'AI отвечает на свободные вопросы',copy:'Можно выбрать цель или задать свой вопрос о тренировках, питании и результатах анализа.'}
 };
 
@@ -27,7 +27,8 @@ function switchAppScreen(key){
   document.querySelector('#demo-title').textContent=data.title;
   document.querySelector('#demo-text').textContent=data.text;
   document.querySelector('#demo-list').innerHTML=data.list.map(item=>`<li>${item}</li>`).join('');
-  document.querySelector('#demo-badge').textContent=data.badge;
+  const badge=document.querySelector('#demo-badge');
+  if(badge) badge.textContent=data.badge;
 }
 
 document.querySelectorAll('[data-app-screen]').forEach(button=>button.addEventListener('click',()=>{
