@@ -32,14 +32,14 @@
       <div class="hero-device reveal delay">
         <div class="device-halo"></div><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
         <div class="phone real-phone hero-phone"><img src="assets/screens/home.jpg" alt="Главный экран приложения Synapse AI"></div>
-        <div class="floating-stat float-health"><span>✦</span><div><small>ОБЩЕЕ СОСТОЯНИЕ</small><b>65 <i>/ 100</i></b><em>Health Score</em></div></div>
-        <div class="floating-stat float-steps"><span>⌁</span><div><small>АКТИВНОСТЬ СЕГОДНЯ</small><b>4 899 <i>шагов</i></b><em>49% цели · 79 ккал</em></div></div>
+        <div class="floating-stat float-health"><span>✦</span><div><small>ОБЩЕЕ СОСТОЯНИЕ</small><b>100 <i>/ 100</i></b><em>Health Score</em></div></div>
+        <div class="floating-stat float-steps"><span>⌁</span><div><small>АКТИВНОСТЬ СЕГОДНЯ</small><b>10 000 <i>шагов</i></b><em>100% цели · 300 ккал</em></div></div>
       </div>
       <a class="slide-next" href="#problem">Листайте дальше <span>↓</span></a>
     </section>
 
     <section class="slide problem" id="problem" data-slide="02">
-      <div class="section-head center reveal"><div class="kicker">02 · Проблема</div><h2>Данные есть.<br><span>Понимания — нет.</span></h2><p>Часы и приложения собирают десятки показателей. Но человеку по-прежнему непонятно: всё ли в порядке и что делать сегодня?</p></div>
+      <div class="section-head center reveal"><div class="kicker">02 · Проблема</div><h2>Данные есть.<br><span>Понимания — нет.</span></h2><p>Часы и приложения собирают десятки показателей. Но человеку по-прежнему непонятно: всё ли в порядке и что делать сегодня? Synapse поможет развить ДИСЦИПЛИНУ💪</p></div>
       <div class="problem-board reveal">
         <div class="signal-lines"><svg viewBox="0 0 1000 430" preserveAspectRatio="none"><path d="M40 100 C280 100 260 215 500 215 S720 100 960 100"/><path d="M40 330 C270 330 290 215 500 215 S730 330 960 330"/><path d="M100 210 C300 160 320 215 500 215 S680 250 900 210"/></svg></div>
         <article class="metric-card steps-card"><div class="metric-icon blue">⌁</div><small>ШАГИ</small><b>4 899</b><span>49% цели · 10 000 шагов</span></article>
@@ -116,14 +116,14 @@
       </div>
       <div class="architecture-flow reveal">
         <article><span>01</span><i>▦</i><b>Архив + профиль</b><small>Шаги, активные калории, пульс, сон, цели</small></article><em>→</em>
-        <article><span>02</span><i>⌁</i><b>Data Pipeline</b><small>Проверка, нормализация, агрегация</small></article><em>→</em>
-        <article class="core-tech"><span>03</span><i>✦</i><b>Synapse AI</b><small>Score, выводы, рекомендации</small></article><em>→</em>
+        <article><span>02</span><i>⌁</i><b>Обработка данных</b><small>Проверка, нормализация, агрегация</small></article><em>→</em>
+        <article class="core-tech"><span>03</span><i>✦</i><b>Synapse AI</b><small>Поиск решения, выводы, рекомендации</small></article><em>→</em>
         <article><span>04</span><i>✓</i><b>Личный план</b><small>Тренировки, питание, следующий шаг</small></article>
       </div>
       <div class="stack-grid">
         <article class="reveal"><span>Мобильное приложение</span><h3>React Native + Expo</h3><p>Единая кодовая база, TypeScript, Expo Router и Zustand.</p><small>CLIENT</small></article>
         <article class="reveal delay"><span>Серверная логика</span><h3>Python + FastAPI</h3><p>API для анализа, рекомендаций, питания, чата и аккаунтов.</p><small>BACKEND</small></article>
-        <article class="reveal delay-2"><span>Анализ данных</span><h3>Pandas + NumPy</h3><p>Расчет метрик, качества данных и поиск необычных значений.</p><small>DATA</small></article>
+        <article class="reveal delay-2"><span>Анализ данных</span><h3>Pandas + NumPy</h3><p>Расчет метрик, качества данных и поиск аномалий.</p><small>DATA</small></article>
         <article class="reveal"><span>AI и хранение</span><h3>DeepSeek + PostgreSQL</h3><p>Структурированные JSON-ответы, история анализов и профили.</p><small>AI · DATABASE</small></article>
       </div>
       <div class="safety-note reveal"><span>＋</span><p><b>Безопасный wellness-подход</b> Synapse не ставит диагнозы. Рекомендации носят информационный характер, а при медицинских вопросах приложение направляет к специалисту.</p></div>
@@ -143,9 +143,9 @@
       <div class="feedback-grid">
         <article class="feedback-card reveal"><div class="feedback-top"><span>«Хочу добавлять свои тренировки»</span><b>✓ ГОТОВО</b></div><h3>Конструктор тренировок</h3><p>Пользователь создает собственную тренировку, добавляет ее в план и отмечает выполнение.</p></article>
         <article class="feedback-card reveal delay"><div class="feedback-top"><span>«Нужно записывать свою еду»</span><b>✓ ГОТОВО</b></div><h3>Дневник питания</h3><p>Добавление приемов пищи с автоматическим пересчетом калорий и БЖУ.</p></article>
-        <article class="feedback-card reveal delay-2"><div class="feedback-top"><span>«Хочу спросить AI о чем угодно»</span><b>✓ ГОТОВО</b></div><h3>Свободный AI-чат</h3><p>Ассистент отвечает с учетом профиля, цели похудения и результатов последнего анализа за 5 дней.</p></article>
+        <article class="feedback-card reveal delay-2"><div class="feedback-top"><span>«Хочу спросить AI о чем угодно»</span><b>✓ ГОТОВО</b></div><h3>Свободный AI-чат</h3><p>Ассистент отвечает с учетом профиля, цели похудения и результатов последнего анализа.</p></article>
       </div>
-      <div class="fixes reveal"><div class="fixes-title"><span>NEW</span><h3>После последнего тестирования</h3><p>Красивое оформление сохранили, а замечания пользователей превратили в готовые улучшения.</p></div><div class="fix-list"><article><b>Вход по почте или телефону</b><p>Поле входа стало понятнее, а авторизация теперь работает и по привязанному номеру.</p></article><article><b>Умная проверка пароля</b><p>Добавили оценку надежности, подсказки и автоматическую генерацию сильного пароля.</p></article><article><b>Регистрация без ошибок</b><p>Добавили подтверждение почты или номера и убрали ложное сообщение о повторной регистрации.</p></article><article><b>Чистая нижняя навигация</b><p>Исправили обрезанные и перечеркнутые подписи в нижнем путеводителе приложения.</p></article><article><b>Понятные показатели здоровья</b><p>Объяснили проценты, «Расход» заменили на «Активные калории», а Health Score — на «Оценку здоровья».</p></article><article><b>Корректный ввод телефона</b><p>Маска номера больше не добавляет лишний ноль сразу после знака «+».</p></article></div></div>
+      <div class="fixes reveal"><div class="fixes-title"><span>NEW</span><h3>Последний бета-тест</h3><p>Красивое оформление сохранили, а замечания пользователей превратили в готовые улучшения.</p></div><div class="fix-list"><article><b>Вход по почте или телефону</b><p>Поле входа стало понятнее, а авторизация теперь работает и по привязанному номеру.</p></article><article><b>Умная проверка пароля</b><p>Добавили оценку надежности, подсказки и автоматическую генерацию сильного пароля.</p></article><article><b>Регистрация без ошибок</b><p>Добавили подтверждение почты или номера и убрали ложное сообщение о повторной регистрации.</p></article><article><b>Чистая нижняя навигация</b><p>Исправили обрезанные и перечеркнутые подписи в нижнем путеводителе приложения.</p></article><article><b>Понятные показатели здоровья</b><p>Объяснили проценты, «Расход» заменили на «Активные калории», а Health Score — на «Оценку здоровья».</p></article><article><b>Корректный ввод телефона</b><p>Маска номера больше не добавляет лишний ноль сразу после знака «+».</p></article></div></div>
     </section>
 
     <section class="slide roadmap" id="roadmap" data-slide="09">
@@ -161,7 +161,7 @@
       </div>
     </section>
 
-    <section class="slide final" id="final" data-slide="10"><div class="final-orb"></div><div class="final-letter">S</div><div class="final-content reveal"><div class="kicker">Synapse AI · Beta</div><h2>Ваши данные уже готовы<br><span>работать на вас.</span></h2><p>Synapse превращает показатели в ясность, а ясность — в ежедневное действие.</p><div><a class="button" href="mailto:elizavetaozerova23@gmail.com?subject=Хочу%20получить%20демо%20Synapse%20AI">Получить демо <b>↗</b></a><a class="ghost-button" href="#demo">Вернуться к демо</a></div></div></section>
+    <section class="slide final" id="final" data-slide="10"><div class="final-orb"></div><div class="final-letter">S</div><div class="final-content reveal"><div class="kicker">Synapse AI · Beta</div><h2>Ваши данные уже готовы<br><span>работать на вас.</span></h2><p>Synapse превращает показатели в ясность, а ясность — в ДИСЦИПЛИНУ💪.</p><div><a class="button" href="mailto:elizavetaozerova23@gmail.com?subject=Хочу%20получить%20демо%20Synapse%20AI">Получить демо <b>↗</b></a><a class="ghost-button" href="#demo">Вернуться к демо</a></div></div></section>
   </main>
   <footer><a class="logo" href="#product"><span class="logo-node">◇</span><b>Synapse <em>AI</em></b></a><p>WMT, вы лучшие! Спасибо, что вы есть!</p>© 2026 Synapse AI · Beta Developers: Озерова Елизавета и Мария Болтуцкая</footer>
   <script src="final.js"></script>
